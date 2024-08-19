@@ -1,0 +1,23 @@
+[1]
+파이썬 : Dynamic Typing
+-> 변수에 다양한 값을 할당해줄 수 있다는 의미를 가짐
+
+ex) Python
+my_dogs = 2
+my_dogs = ["Sammy", "Frankie"]
+-> 이런 경우 파이썬에서는 에러가 발생하지 않음
+
+ex) C / C++ 동적 할당으로 에러 발생
+int my_dogs = 1;
+my_dog = "Sammy" 
+
+[2]
+다양한 데이터 유형으로 인해 오동작
+-> 따라서 데이터 유형 별로 정리하고 알고 있는게 좋은데, 보통은 type () 를 통해서 데이터 타입을 확인한다.
+
+ex) Python : 변수명 만을 써서 논리 연산 하기
+my_income = 100
+tax_rate = 0.1
+my_taxes = my_income * tax_rate
+
+-> my_taxes의 결과 10.0

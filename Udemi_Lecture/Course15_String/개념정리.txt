@@ -1,0 +1,20 @@
+문자열에 대한 강의
+1. 작은 따옴표, 큰 따옴표
+- 'hello'
+- "Hello"
+- 문장 안에 작은 따옴표가 있을 경우 : "I don't do that" 처럼 안에 작은 따옴표 표시 및 외부 큰 따옴표로 대체 가능
+
+2. Indexing
+- 문자열에서 단일 문자를 가져올 때 사용되는 용어
+ex)
+h e l l o 에서 index는 각각 0 1 2 3 4로 indexing이 되는데, 파이썬의 경우 index는 0번부터 시작한다.
+- 또는 Reverse Indexing이라고 해서 0 1 2 3 4 처럼 말고 역순인 0 -4 -3 -2 -1을 indexing할 수 있다.
+- 우리가 만약 e 를 반환하고 싶으면 -4 또는 1을 통해서 e 라는 character를 반환할 수 있다.
+
+3. Slicing
+- 여러 서브섹션의 문자열의 반환할 수 있음
+- [] 대괄호를 사용해서 가져올 수 있는데 아래 문법과 같이 사용함
+- [start : stop : step]
+- start는 시작 숫자의 index
+- stop은 자기 자신을 제외한 index 마지막 위치
+- step은 start to stop까지 점프하는 크기를 말함
