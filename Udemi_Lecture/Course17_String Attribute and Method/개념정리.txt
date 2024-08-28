@@ -1,0 +1,33 @@
+1. Concatenation
+
+my_name = "Jose"
+print("Hello " + my_name)
+
+결과 : Hello, Jose
+
+2. 문자열 포맷팅
+1) .format()
+2) f-strings
+
+- 문자열을 붙일 떄 쓸 수 있는 방법으로 .format()의 경우 문자열 붙이는 부분에 중괄호를 붙임으로써 할 수 있다.
+print('This is a string {}' .format('INSERTED'))
+결과 : This is a string INSERTED
+- 여러 문자열을 붙일 때도 들어가는 순서로 중괄호에 format을 넣어주면 된다.
+- 하지만 Indexing을 통해서 순서를 바꿔줄 수 있다.
+
+ex)
+print ('The {0} {0} {0} .format('fox', 'brown', 'quick'))
+결과 : The fox fox fox
+
+- format내에서 변수 할당 방식으로도 formating을 할 수 있다.
+print ('The {q} {b} {f}' .format(f = 'fox', b = 'brown', q = 'quick'))
+결과 : The fox brown quick
+
+- 문자열 포맷에 floating point 값을 사용하는 경우 다음과 같은 형태로 숫자 표현을 할 수 있다.
+- {value:width.precision f}
+ex)
+result = 100/777
+resut = 1.287001287001287...
+이거를 소수점 세자리에서 반올림한다 가정을 하면
+print("The result was {r:1.3f} .foramt(r = result))
+결과 : The result was 0.129
