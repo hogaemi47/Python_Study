@@ -1,0 +1,56 @@
+1. List
+- 객체 유형을 포함할 수 있는 순서가 정해진 시퀀스
+- 대괄호와 콤마를 이용해서 리스트를 구성한다
+	ex) [1,2,3,4,5]
+
+my_list = [1,2,3]
+my_list = ['STRING', 100, 23.2] : 다양한 형태를 list에 넣을 수 있음
+len(my_list) = 3 (len : 길이 표시)
+
+ex) mylist = ['one', 'two', 'three']
+mylist[0] = one
+mylist[1:] = two, three
+mylist = one, two, three
+
+2. List는 concatenate 기법도 가능함
+	ex) mylist = ['one', 'two', 'three']
+		another_list = ['four', 'five']
+		mylist + another_list = one, two, three, four, five
+
+3. List 안에 있는 값을 변경을 할 수도 있음 (indexing을 사용해서)
+	ex) new_list = ['one', 'two', 'three', 'four', 'five']
+		new_list[0] = 'ONE ALL CAPS'
+		new_list = ['ONE ALL CAPS', 'two', 'three', 'four', 'five']
+		이런 식으로 배열 indexing을 통해서 해당 부분에 해당하는 list 값을 바꿀 수 있음
+
+4. List의 맨마지막에도 값을 추가해줄 수도 있음
+- Method 중 append 함수를 사용해서 추가해줄 수 있음
+	ex) new_list.append('six')
+		new_list = ['ONE ALL CAPS', 'two', 'three', 'four', 'five', 'six']
+
+5. List의 끝에 있는 걸 없애는 방법
+- Method 중 pop함수를 사용해서 없애줄 수 있음
+	ex) new_list.pop() -> return 'seven'
+- 또한 변수 내에도 저장을 할 수 있음
+- 또한 인덱스별로의 값들을 삭제해줄 수 도 있음
+	ex) new_list_pop(0) 0 index의 값을 날림
+
+6. 또다른 유용한 Method : sort / reverse
+	ex)
+	new_list = ['a','e','x','b','c']
+	num_list = [4,1,8,3]
+- sort : list의 정렬
+	new_list.sort() = a, b, c, e, x
+- ** 여기서 중요한 사실 **
+.sort()는 아무것도 반환을 하지 않는 method이기 때문에 실제로 어떤 변수에 sort method가 된 list를 할당하더라도 그 변수를 출력을 해도 아무것도 나오지 않음
+그 자리에서 일어나는 일이기 떄문임!
+	ex)
+	my_sorted_list = new_list.sort()
+	my_sorted_list -> nothing
+	type(my_sorted_list) = NoneType
+- 따라서 지정하는 방법
+	ex)
+	new_list.sort()
+	my_sotred_list = new_list
+	my_sorted_list = a, b, c, e, x
+- reverse : sort의 반대로 정렬이 되는 method
